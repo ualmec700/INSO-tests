@@ -271,10 +271,7 @@ public class TestA2E6 {
 	public void testNumeroDeAtributos() {
 
 		System.out.println("El número de atributos del modelo es: " + numberOfAttributtes);
-		//assertTrue(
-		//		"El número recomendado de atributos (sin incluir los atributos derivados de los roles de las asociaciones) es 3 o 4",
-		//		((numberOfAttributtes==3) || (numberOfAttributtes==4)));
-		assertEquals("El número recomendado de atributos (sin incluir los atributos derivados de los roles de las asociaciones) " + testnattr, testnattr, numberOfAttributtes);
+		assertEquals("El número recomendado de atributos (sin incluir los atributos derivados de los roles de las asociaciones) es " + testnattr, testnattr, numberOfAttributtes);
 	}
 
 	@Test
