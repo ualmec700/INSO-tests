@@ -33,7 +33,7 @@ public class A2E4FilesExists extends BaseTC {
 	}
 
 	@Test
-	public void FileA2E1vppDoesNotExists() {
+	public void FileA2E4vppDoesNotExists() {
 		fileName = "A2E4.vpp";
 		Path p = Paths.get(vppSourcePath + fileName);
 		assertTrue("El archivo " + vppSourcePathStudent + fileName + " no existe en el respositorio del estudiante.",
@@ -41,7 +41,7 @@ public class A2E4FilesExists extends BaseTC {
 	}
 
 	@Test
-	public void FileA2E1umlDoesNotExists() {
+	public void FileA2E4umlDoesNotExists() {
 		fileName = "A2E4.uml";
 		Path p = Paths.get(umlSourcePath + fileName);
 		assertTrue("El archivo " + umlSourcePathStudent + fileName + " no existe en el respositorio del estudiante.",
@@ -49,7 +49,7 @@ public class A2E4FilesExists extends BaseTC {
 	}
 
 	//@Test
-	public void FileA2E1umlProfileDoesNotExists() {
+	public void FileA2E4umlProfileDoesNotExists() {
 		fileName = "A2E4.profile.uml";
 		Path p = Paths.get(umlSourcePath + fileName);
 		assertTrue("El archivo " + umlSourcePathStudent + fileName + " no existe en el respositorio del estudiante.",
