@@ -1,0 +1,16 @@
+package es.ual.inso.actividad3;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+@RunWith(Suite.class)
+@SuiteClasses({ 
+  TestA3E1.class,
+  TestA3E2.class,
+  TestA3E3.class,
+  TestA3E4.class
+})
+public class AllTests {
+  
+}
