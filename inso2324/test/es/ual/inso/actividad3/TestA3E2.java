@@ -269,9 +269,10 @@ public class TestA3E2 {
   public void testAlt1DarAltaTapa() {
     if (darAltaTapa != null) {
       boolean ll1 = coveredAltD1.contains("Carta");
-      boolean ll2 = coveredAltD1.contains("Tapa");
+      int nCovered = coveredAltD1.size();
+
       assertTrue("El bloque principal no abarca correctamente la clase Carta en 'darAltaTapa'.", ll1);
-      assertTrue("El bloque principal no abarca correctamente la clase Tapa en 'darAltaTapa'.", ll2);
+      assertEquals("El número de clases cubiertos por el bloque principal no es correcto", 1, nCovered);
     }
   }
 
