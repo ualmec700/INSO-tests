@@ -39,8 +39,8 @@ public class TestA1E1 {
   private static List<Extend> extendList;
   private static List<Association> associationList;
 
-  private static int nactor = 4;
-  private static int nusecase = 5;
+  private static int nactor = 3;
+  private static int nusecase = 6;
   private static int ngenusecase = 1;
   private static int ngenactor = 1;
   private static int ninclude = 1;
