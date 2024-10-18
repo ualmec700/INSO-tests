@@ -1,0 +1,32 @@
+name: Tests for INSO repository
+run-name: ${{ github.actor }} is executing the tests
+on: [push]
+jobs:
+  test:
+      name: Test Build
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+          with:
+            path: main
+            
+        - name: Checkout repo with tests
+          uses: actions/checkout@v4
+          with:
+            reporitory: ualinso/INSO-test
+            path: INSO-tests
+            
+        - name: Test execution
+          working-directory: ./INSO-tests/inso2425
+          run: mvn test
+          
+        - name: Publish Test Report
+          if: success() || failure()
+          uses: scacap/action-surefire-report@v1
+          
+        - name: Test Summary
+          uses: test-summary/action@v2
+          with:
+            paths: "**/surefire-reports/TEST-*.xml"
+          if: always()
